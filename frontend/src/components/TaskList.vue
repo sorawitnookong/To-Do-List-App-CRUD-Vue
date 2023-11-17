@@ -97,7 +97,9 @@ export default {
         },
         updateArray() {
             this.updatedArray = this.numbers.map((number) => {
-                if (number % 5 === 0) {
+                if (number % 5 === 0 && number % 3 === 0) {
+                    return 'three-five';
+                } else if (number % 5 === 0) {
                     return 'five';
                 } else if (number % 3 === 0) {
                     return 'three';
